@@ -3,6 +3,7 @@ package com.foodkrane.driver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.foodkrane.driver.fragments.HomeFragment;
 
@@ -85,9 +87,50 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
         Fragment f=null;
 
-        if (id == R.id.home) {
+        switch (id) {
+            case R.id.dashboard:
+                Toast.makeText(this, "Dashboard", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            case R.id.ongoing:
+                Toast.makeText(this, "Ongoing Orders", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            case R.id.orderlist:
+                Toast.makeText(this, "Order List", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            case R.id.delivered:
+                Toast.makeText(this, "Delivered", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            case R.id.pending:
+                Toast.makeText(this, "Pending", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            case R.id.rejected:
+                Toast.makeText(this, "Rejected", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            case R.id.payment:
+                Toast.makeText(this, "Payment", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            case R.id.paytmqr:
+                Toast.makeText(this, "Paytm QR code", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            case R.id.bugreport:
+                Toast.makeText(this, "Bug Report", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            case R.id.contactus:
+                Toast.makeText(this, "Contact Us 24*7", Toast.LENGTH_SHORT).show();
+                f = new HomeFragment();
+                break;
+            default:
 
-            f=new HomeFragment();
+                break;
         }
 
         if (f != null) {

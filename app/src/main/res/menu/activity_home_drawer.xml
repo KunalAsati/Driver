@@ -5,9 +5,45 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/home"
-            android:icon="@android:drawable/ic_dialog_dialer"
-            android:title="@string/home_string" />
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/ongoing"
+            android:icon="@drawable/ongoing"
+            android:title="Ongoing order" />
+        <item
+            android:id="@+id/orderlist"
+            android:icon="@drawable/orderlist"
+            android:title="Order List" />
+        <item
+            android:id="@+id/delivered"
+            android:icon="@drawable/delivered"
+            android:title="Delivered" />
+        <item
+            android:id="@+id/pending"
+            android:icon="@drawable/pending"
+            android:title="Pending" />
+        <item
+            android:id="@+id/rejected"
+            android:icon="@drawable/rejected"
+            android:title="Rejected" />
+        <item
+            android:id="@+id/payment"
+            android:icon="@drawable/payments"
+            android:title="Payment Collected" />
+        <item
+            android:id="@+id/paytmqr"
+            android:icon="@drawable/qrcode"
+            android:title="Paytm QR code" />
+        <item
+            android:id="@+id/bugreport"
+            android:icon="@drawable/bugreport"
+            android:title="Bug Report" />
+        <item
+            android:id="@+id/contactus"
+            android:icon="@drawable/contact"
+            android:title="Contact us 24*7" />
     </group>
 
 
